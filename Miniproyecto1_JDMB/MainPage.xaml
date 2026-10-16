@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Miniproyecto1_JDMB.MainPage"
+             BackgroundColor="Black">
+
+    <ContentPage.Resources>
+        <Style TargetType="Button">
+            <Setter Property="FontSize" Value="32" />
+            <Setter Property="CornerRadius" Value="10" />
+        </Style>
+    </ContentPage.Resources>
+
+    <Grid Padding="10" RowSpacing="5" ColumnSpacing="5" BackgroundColor="Black">
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <Label x:Name="Pantalla" Text="0"
+           Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="4"
+           FontSize="60" TextColor="White"
+           HorizontalTextAlignment="End" VerticalTextAlignment="End" />
+
+        <Button Text="7" Grid.Row="1" Grid.Column="0" BackgroundColor="Black" TextColor="White" Clicked="OnNumeroClicked"/>
+        <Button Text="8" Grid.Row="1" Grid.Column="1" BackgroundColor="Black" TextColor="White" Clicked="OnNumeroClicked"/>
+        <Button Text="9" Grid.Row="1" Grid.Column="2" BackgroundColor="Black" TextColor="White" Clicked="OnNumeroClicked"/>
+        <Button Text="÷" Grid.Row="1" Grid.Column="3" BackgroundColor="Black" TextColor="Orange" Clicked="OnOperadorClicked"/>
+
+        <Button Text="4" Grid.Row="2" Grid.Column="0" BackgroundColor="Black" TextColor="White" Clicked="OnNumeroClicked"/>
+        <Button Text="5" Grid.Row="2" Grid.Column="1" BackgroundColor="Black" TextColor="White" Clicked="OnNumeroClicked"/>
+        <Button Text="6" Grid.Row="2" Grid.Column="2" BackgroundColor="Black" TextColor="White" Clicked="OnNumeroClicked"/>
+        <Button Text="×" Grid.Row="2" Grid.Column="3" BackgroundColor="Black" TextColor="Orange" Clicked="OnOperadorClicked"/>
+
+        <Button Text="1" Grid.Row="3" Grid.Column="0" BackgroundColor="Black" TextColor="White" Clicked="OnNumeroClicked"/>
+        <Button Text="2" Grid.Row="3" Grid.Column="1" BackgroundColor="Black" TextColor="White" Clicked="OnNumeroClicked"/>
+        <Button Text="3" Grid.Row="3" Grid.Column="2" BackgroundColor="Black" TextColor="White" Clicked="OnNumeroClicked"/>
+        <Button Text="-" Grid.Row="3" Grid.Column="3" BackgroundColor="Black" TextColor="Orange" Clicked="OnOperadorClicked"/>
+
+        <Button Text="0" Grid.Row="4" Grid.Column="0" BackgroundColor="Black" TextColor="White" Clicked="OnNumeroClicked"/>
+        <Button Text="." Grid.Row="4" Grid.Column="1" BackgroundColor="Black" TextColor="White" Clicked="OnNumeroClicked"/>
+        <Button Text="=" Grid.Row="4" Grid.Column="2" BackgroundColor="Orange" TextColor="White" Clicked="OnIgualClicked"/>
+        <Button Text="+" Grid.Row="4" Grid.Column="3" BackgroundColor="Black" TextColor="Orange" Clicked="OnOperadorClicked"/>
+
+    </Grid>
+
+</ContentPage>
+
